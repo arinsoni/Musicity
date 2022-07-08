@@ -4,11 +4,12 @@
         <title>The Band</title>
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     </head>
     <body>
-
+        
 
         <ul class="modification">
             <li> <a href="#"> HOME </a> </li>
@@ -67,10 +68,8 @@
                         <h3>New York</h3>
                         <h2>Fri 27 Nov 2016</h2>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button>
-                            <a class="button" href="#popup1">Buy Ticket</a>
-
-                            
+                        <button onclick="location.href='#popup'">
+                            <a href="#popup">Buy Ticket</a>
                         </button>
                     </div>
                     
@@ -86,8 +85,8 @@
                         <h3>Paris</h3>
                         <h2>Fri 28 Nov 2016</h2>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button>
-                            Buy Ticket
+                        <button onclick="location.href='#popup'">
+                            <a href="#popup">Buy Ticket</a>
                         </button>
                     </div>
                 </div>
@@ -100,8 +99,8 @@
                         <h3>San Fransico</h3>
                         <h2>Fri 29 Nov 2016</h2>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button>
-                            Buy Ticket
+                        <button onclick="location.href='#popup'">
+                            <a href="#popup">Buy Ticket</a>
                         </button>
                     </div>
                 </div>
@@ -133,9 +132,9 @@
             </div>
             
         </div>
-        <!-- <div class="map_image">
+        <div class="map_image">
             <img src="./assets/images/map.jpeg" alt="">
-        </div> -->
+        </div>
         <div class="icons">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
@@ -143,13 +142,44 @@
             <a href="#" class="fa fa-instagram"></a>
         </div>
         
-        <div id="popup1" >
-	
-		
-            <a class="close" href="#tour_dates">&times;</a>
+     
         
-    
+     
     </div>
 
+    <div id="popup">
+        <div class="popup1">
+            <div class="up">
+
+               
+                <div onclick="location.href = '#tour' " class="close">
+                    <a>&times;</a>
+                </div>
+
+                
+
+                <div class="ticket">
+                    <h1><i class="fa-solid fa-suitcase"></i> &nbsp;TICKETS</h1> 
+                </div>
+                
+               
+            </div>
+            <div class="down">
+                <label><i class="fa-solid fa-user"></i>Tickets, $15 per person</label>
+                <input type="text" placeholder="How many?">
+
+                <label><i class="fa-solid fa-cart-shopping"></i>Send to</label>
+                <input type="email" placeholder="Enter Email">
+
+                <button class="submit_ticket" > <h3>PAY &nbsp; <i class="fa-solid fa-check"></i></h3></button>
+
+            </div>
+
+           
+                        
+        </div>
+        
+    </div>
     </body>
+    <script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
 </html>

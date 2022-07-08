@@ -142,8 +142,8 @@ html{
     text-align: left;
     position: relative;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    justify-content: left; /*x axis*/
+    align-items: center; /*y axis*/
 }
 
 .box1 p{
@@ -232,6 +232,8 @@ html{
     padding: 12px;
     color: white;
     font-size: medium;
+    border: none;
+
 }
 
 .image{
@@ -239,13 +241,22 @@ html{
     height: 180px;
     width: 100%;
 }
+#place a{
+    text-decoration: none;
+    color: white;
+}
 #place img:hover{
     opacity: 0.5;
 }
 #place button:hover{
+
+    background-color: gray;
+}
+#place button:hover > a{
     color: black;
     background-color: gray;
 }
+
 
 /* CONTACT */
 
@@ -349,25 +360,120 @@ color: gray;
    
     color: gray;
 }
-/* #popup1 {
-    position: fixed;
-    top: 0;
+#popup{
+    background-color: rgba(0, 0, 0, 0.6);
+    top:0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: (0, 0, 0, 0.6);
-    
+    position: fixed;
     display: none;
-    opacity: 0;
-    z-index: 999999;
-    height: 100px;
-    width: 100px;
-  }
-  #popup1:target {
-    display: block;
-    opacity: 1;
-  } */
+   
   
-  
-  
-  
+}
+#popup:target{
+    display: block
+}
+
+.popup1{
+    height: 40%;
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    color: black;
+    margin-top: 10%;
+    position: relative;
+}
+
+
+
+.up{
+    background-color: #009688;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.close{
+    position: absolute;
+    right: 0;/* right se duri 0*/
+    width: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close a{
+    font-size: 30px;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+}
+
+.close:hover  {
+    background-color: lightgray;
+}
+
+.close:hover > a{
+    color: black;
+}
+.ticket{
+   margin: auto;
+}
+.ticket h1{
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.3px;
+    color: white;
+}
+.close{
+    cursor: pointer;
+}
+
+.down{
+
+    margin: 2%;
+    width: 96%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.down label{
+    margin-bottom: 2%;
+}
+.down input{
+    height: 56%;
+    margin-bottom: 2%;
+}
+.submit_ticket{
+    background-color: #009688;
+    height: 30%;
+    border: none;
+}
+
+.submit_ticket h3{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.submit_ticket i{
+    color: white;
+    font-size: 20px;
+}
+.fa-check:before {
+    content: "\f00c";
+}
+.down button:hover{
+    background-color: rgba(0, 0, 0, 0.27);
+    color: black;
+}
+.down button:hover > h3{
+    
+    color: black;
+}
+.down button:hover > h3 i{
+    
+    color: black;
+}
